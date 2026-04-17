@@ -241,7 +241,8 @@
   i { font-size: 1.1rem; }
 }
 
-.author__name--sidebar {
+.sidebar .author__name.author__name--sidebar,
+.author__name.author__name--sidebar {
   margin: 0 0 1rem;
   font-size: 4.5rem;
   font-weight: 700;
