@@ -5,7 +5,9 @@
       "Bash(curl -sL https://daniel-posthumus.github.io/assets/css/main.css)",
       "Bash(curl -sL https://daniel-posthumus.github.io/)",
       "Bash(gh api *)",
-      "Bash(python3 -c \"import sys, json; d=json.load\\(sys.stdin\\); print\\('status:', d.get\\('status'\\), 'created:', d.get\\('created_at'\\), 'updated:', d.get\\('updated_at'\\)\\)\")"
+      "Bash(python3 -c \"import sys, json; d=json.load\\(sys.stdin\\); print\\('status:', d.get\\('status'\\), 'created:', d.get\\('created_at'\\), 'updated:', d.get\\('updated_at'\\)\\)\")",
+      "Bash(grep -Eo \"^h[12][,{]|\\\\}h[12][,{]|[^.]h[12]\\\\{[^}]*\\\\}\")",
+      "Bash(python3 -c ' *)"
     ]
   }
 }
