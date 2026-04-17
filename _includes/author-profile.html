@@ -7,7 +7,11 @@
 <div itemscope itemtype="http://schema.org/Person">
 
   {% if author.name %}
-    <h2 class="author__name author__name--sidebar">{{ author.name }}</h2>
+    {% assign name_parts = author.name | split: ' ' %}
+    <h2 class="author__name author__name--sidebar">
+      <span class="author__name-line">{{ name_parts | first }}</span>
+      <span class="author__name-line">{{ name_parts | last }}</span>
+    </h2>
   {% endif %}
 
   <div class="author__avatar">

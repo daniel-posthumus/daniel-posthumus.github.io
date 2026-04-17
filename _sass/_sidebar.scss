@@ -14,7 +14,7 @@
   margin-bottom: 1em;
 
   @include breakpoint($large) {
-    @include span(2 of 12);
+    @include span(3 of 12);
     opacity: 1;
     -webkit-transition: opacity 0.2s ease-in-out;
             transition: opacity 0.2s ease-in-out;
@@ -244,7 +244,9 @@
 .sidebar .author__name.author__name--sidebar,
 .author__name.author__name--sidebar {
   margin: 0 0 1rem;
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   font-weight: 700;
   line-height: 1;
+
+  .author__name-line { display: block; white-space: nowrap; }
 }
