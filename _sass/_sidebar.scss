@@ -244,9 +244,9 @@
 .sidebar .author__name.author__name--sidebar,
 .author__name.author__name--sidebar {
   margin: 0 0 1rem;
+  font-size: 1.15rem * 2.75; // link size × 2.75 (i.e., 175% bigger)
   font-weight: 700;
   line-height: 1;
-  letter-spacing: 0;
 
   .author__name-line {
     display: block;
