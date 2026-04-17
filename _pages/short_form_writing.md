@@ -1,9 +1,11 @@
 ---
 layout: single
-title: "Public Writing"
-permalink: /public_writing/
+title: "Writing"
+permalink: /writing/
 author_profile: true
 classes: wide
+redirect_from:
+  - /public_writing/
 ---
 
 {% include base_path %}
@@ -22,14 +24,14 @@ classes: wide
 
 {% assign policy = site.short_writing | where: "pub_type", "policy" | sort: "order" %}
 {% if policy and policy.size > 0 %}
-## Policy Writing
+## Policy Briefs
 
 {% for pub in policy %}{% include pub-entry-publication.html pub=pub me=me %}{% endfor %}
 {% endif %}
 
 {% assign public = site.short_writing | where: "pub_type", "public" | sort: "order" %}
 {% if public and public.size > 0 %}
-## Public Writing
+## Op-Eds
 
 {% for pub in public %}{% include pub-entry-publication.html pub=pub me=me %}{% endfor %}
 {% endif %}

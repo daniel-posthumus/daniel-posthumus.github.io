@@ -1,8 +1,7 @@
 ---
 title: "Brand Power in California’s Retail Gasoline Market (In-Progress)"
 collection: publications
-pub_type: working_paper
-paperurl: 'https://drive.google.com/file/d/1IckYMuRAlrmlbzDNxJRlCV9RgJNdmnMJ/view?usp=sharing.'
+pub_type: hidden
 authors: 
     - Daniel Posthumus
 abstract: 'Gasoline is physically homogeneous, yet retail prices differ systematically across brands. I study California’s gasoline market, where retail prices have outpaced those in the rest of the United States since 2015 — a phenomenon known as the “Mystery Gasoline Surcharge”. Over the same period, a wedge has emerged and widened between “premium” brands’ and other stations’ prices, despite little evidence of higher marginal costs or increased market consolidation. Using proprietary station-level data on prices and quantities in California from 2011 to 2023, I estimate a baseline nested logit discrete-choice model of station choice. I instrument for price using an interaction of spot price movements and within-market variation in distance to supply infrastructure. Estimated substitution is substantially stronger within station types — branded, hypermart, and unbranded — than across them. Estimating the model separately for pre- and post-2015 periods, I find evidence that consumer price sensitivity declined markedly after 2015, while nest-level preferences strengthened. Under a benchmark static single-product Bertrand pricing assumption, the demand estimates imply near-zero markups before 2015 and average markups of a little over $1 per gallon after 2015. Consistent with observed brand premia, estimated willingness-to-pay (WTP) is higher for premium brands and cross-brand WTP rankings are stable over the sample period. I conclude by proposing and outlining a richer demand framework to address limitations of the nested logit.'

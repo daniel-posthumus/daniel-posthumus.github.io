@@ -84,11 +84,12 @@ author:
   name             : "Daniel Posthumus"
   avatar           : "profile.png"
   bio              : "Pre-Doctoral Fellow with Stanford Institute for Economic Policy Research (SIEPR)"
-  location         : "Palo Alto, CA"
+  location         :
+  cv               : "https://drive.google.com/file/d/1rNDbdbki0cW_wVZ3nc4b5J_w3y-X7vo6/view?usp=sharing"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=TXrfcsMAAAAJ&hl=en&oi=ao"
-  email            :
+  email            : "danpost@stanford.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -97,7 +98,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "daniel-posthumus"
+  github           :
   google_plus      :
   keybase          :
   instagram        :
@@ -116,7 +117,7 @@ author:
   xing             :
   youtube          :
   wikipedia        :
-  linkedin         : "daniel-posthumus-5a92691b2"
+  linkedin         :
   substack         : "https://substack.com/@danielposthumu2"
 
 

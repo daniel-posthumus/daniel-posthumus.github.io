@@ -9,11 +9,7 @@ redirect_from:
   - /research/
 ---
 
-I am currently a pre-doctoral research fellow with Professor Neale Mahoney at the Stanford Institute for Economic Policy Research (SIEPR). I am currently working on projects related to the political economy, housing, and industrial organization (in particular productivity and retail gasoline markets). My CV can be found [here](https://drive.google.com/file/d/1rNDbdbki0cW_wVZ3nc4b5J_w3y-X7vo6/view?usp=sharing).
-
-On a personal note, I love playing tennis, reading, history, watching movies, obsessing over politics, exploring the texture of urban life, and (in true California fashion) cycling.
-
-Feel free to contact me at [danpost@stanford.edu](mailto:danpost@stanford.edu).
+I am an incoming Business Economics PhD student at Boston University's Questrom School of Business. My research interests lie in empirical industrial organization, particularly as applied to housing and energy markets. On a personal note, I love playing tennis, reading, history, and obsessing over politics.
 
 {% include base_path %}
 
@@ -41,9 +37,16 @@ Feel free to contact me at [danpost@stanford.edu](mailto:danpost@stanford.edu).
 
 {% assign wp = site.research | where: "pub_type", "working_paper" | sort: "order" %}
 {% if wp and wp.size > 0 %}
-## Working Papers and Works-in-Progress
+## Working Papers
 
 {% for pub in wp %}{% include pub-entry-working.html pub=pub me=me %}{% endfor %}
+{% endif %}
+
+{% assign wip = site.research | where: "pub_type", "works_in_progress" | sort: "order" %}
+{% if wip and wip.size > 0 %}
+## Works-in-Progress
+
+{% for pub in wip %}{% include pub-entry-working.html pub=pub me=me %}{% endfor %}
 {% endif %}
 
 {% assign other = site.research | where: "pub_type", "other_work" | sort: "order" %}

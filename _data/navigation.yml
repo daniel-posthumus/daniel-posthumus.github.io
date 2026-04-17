@@ -1,7 +1,10 @@
 # main links links
 main:
-  - title: "Public Writing"
-    url: /public_writing/
+  - title: "Writing"
+    url: /writing/
+
+  - title: "Substack"
+    url: https://danielposthumus.substack.com
 
   # - title: "Blog Posts"
     # url: /year-archive/
