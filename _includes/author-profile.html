@@ -8,9 +8,9 @@
 
   {% if author.name %}
     {% assign name_parts = author.name | split: ' ' %}
-    <h2 class="author__name author__name--sidebar">
+    <h2 class="author__name author__name--sidebar" data-fit-name>
       <span class="author__name-line">{{ name_parts | first }}</span>
-      <span class="author__name-line">{{ name_parts | last }}</span>
+      <span class="author__name-line" data-fit-target>{{ name_parts | last }}</span>
     </h2>
   {% endif %}
 
@@ -39,3 +39,32 @@
     </ul>
   </div>
 </div>
+
+<script>
+(function() {
+  function fitName() {
+    document.querySelectorAll('[data-fit-name]').forEach(function(container) {
+      var target = container.querySelector('[data-fit-target]');
+      if (!target) return;
+      var probe = 100;
+      var lines = container.querySelectorAll('.author__name-line');
+      lines.forEach(function(el) { el.style.fontSize = probe + 'px'; });
+      var natural = target.getBoundingClientRect().width;
+      if (!natural) return;
+      var available = container.getBoundingClientRect().width;
+      var size = probe * (available / natural);
+      lines.forEach(function(el) { el.style.fontSize = size + 'px'; });
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', fitName);
+  } else {
+    fitName();
+  }
+  window.addEventListener('load', fitName);
+  window.addEventListener('resize', fitName);
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(fitName);
+  }
+})();
+</script>
