@@ -1,0 +1,29 @@
+{% assign pub = include.pub %}
+{% assign me = include.me | default: site.author.name | default: "Daniel Posthumus" %}
+{% assign pub_link = pub.link | default: pub.paperurl %}
+{% assign coauthors = pub.authors | where_exp: "a", "a != me" %}
+<div class="pub-item">
+  {% if pub_link %}
+    <a class="pub-title" href="{{ pub_link }}" target="_blank" rel="noopener">{{ pub.title }}</a>
+  {% else %}
+    <span class="pub-title">{{ pub.title }}</span>
+  {% endif %}
+  {% if coauthors and coauthors.size > 0 %}
+    <span class="pub-meta">(with {{ coauthors | join: ", " }})</span>
+  {% endif %}
+  {% if pub.venue %}
+    <span class="pub-meta"><em>{{ pub.venue }}</em>{% if pub.volume or pub.issue or pub.pages %} ({% if pub.volume %}Volume {{ pub.volume }}{% endif %}{% if pub.issue %}{% if pub.volume %}, {% endif %}Issue {{ pub.issue }}{% endif %}{% if pub.pages %}{% if pub.volume or pub.issue %}, {% endif %}pp. {{ pub.pages }}{% endif %}){% endif %}</span>
+  {% endif %}
+  {% if pub.date %}<span class="pub-meta">{{ pub.date | date: "%B %Y" }}</span>{% endif %}
+
+  {% assign abstract_text = pub.abstract %}
+  {% if abstract_text == nil or abstract_text == "" %}
+    {% assign abstract_text = pub.content | strip %}
+  {% endif %}
+  {% if abstract_text != "" %}
+  <details class="pub-abstract">
+    <summary>Abstract</summary>
+    <div class="pub-abstract-body">{{ abstract_text | markdownify }}</div>
+  </details>
+  {% endif %}
+</div>

@@ -1,9 +1,12 @@
 ---
 title: "Democratizing Truth"
 collection: publications
-pub_type: peer_reviewed
+pub_type: other_work
 date: 2021-11-01
 venue: 'International Journal of Transitional Justice'
+volume: 15
+issue: 3
+pages: '510–532'
 paperurl: 'https://academic.oup.com/ijtj/article-abstract/15/3/510/6406461.'
 authors: 
     - Kelebogile Zvobgo
