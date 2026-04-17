@@ -6,6 +6,10 @@
 
 <div itemscope itemtype="http://schema.org/Person">
 
+  {% if author.name %}
+    <h2 class="author__name author__name--sidebar">{{ author.name }}</h2>
+  {% endif %}
+
   <div class="author__avatar">
     {% if author.avatar contains "://" %}
       <img src="{{ author.avatar }}" alt="{{ author.name }}">
@@ -13,10 +17,6 @@
       <img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.name }}">
     {% endif %}
   </div>
-
-  {% if author.name %}
-    <h2 class="author__name author__name--sidebar">{{ author.name }}</h2>
-  {% endif %}
 
   <div class="author__urls-wrapper">
     <ul class="author__urls social-icons author__urls--large">

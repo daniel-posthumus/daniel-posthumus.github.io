@@ -1,6 +1,7 @@
 ---
 permalink: /
 title: "Daniel Posthumus"
+hide_title: true
 author_profile: true
 classes: wide
 redirect_from:
