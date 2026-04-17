@@ -14,6 +14,10 @@
     {% endif %}
   </div>
 
+  {% if author.name %}
+    <h2 class="author__name author__name--sidebar">{{ author.name }}</h2>
+  {% endif %}
+
   <div class="author__urls-wrapper">
     <ul class="author__urls social-icons author__urls--large">
       {% if author.email %}
@@ -31,8 +35,3 @@
     </ul>
   </div>
 </div>
-
-<style>
-  .author__urls--large a { font-size: 1.15rem !important; line-height: 1.9; }
-  .author__urls--large i { font-size: 1.1rem; }
-</style>
