@@ -10,8 +10,6 @@ redirect_from:
   - /research/
 ---
 
-## About
-
 I am an incoming Business Economics PhD student at Boston University's Questrom School of Business. My research interests lie in empirical industrial organization, particularly as applied to housing and energy markets. On a personal note, I love playing tennis, reading, history, and obsessing over politics.
 
 {% include base_path %}
@@ -45,13 +43,6 @@ I am an incoming Business Economics PhD student at Boston University's Questrom 
 ### Working Papers
 
 {% for pub in wp %}{% include pub-entry-working.html pub=pub me=me %}{% endfor %}
-{% endif %}
-
-{% assign wip = site.research | where: "pub_type", "works_in_progress" | sort: "date" | reverse %}
-{% if wip and wip.size > 0 %}
-### Works-in-Progress
-
-{% for pub in wip %}{% include pub-entry-working.html pub=pub me=me %}{% endfor %}
 {% endif %}
 
 {% assign other = site.research | where: "pub_type", "other_work" | sort: "date" | reverse %}

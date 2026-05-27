@@ -247,11 +247,8 @@
   font-size: 2.95rem; // 3.1875rem × 0.925
   font-weight: 700;
   line-height: 1;
-
-  .author__name-line {
-    display: block;
-    white-space: nowrap;
-    font-weight: inherit;
-    line-height: 1;
-  }
+  // one line, starting at the photo's left edge, allowed to run past the
+  // narrow sidebar column and over the content to its right
+  white-space: nowrap;
+  overflow: visible;
 }

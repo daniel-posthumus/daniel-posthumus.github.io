@@ -1,0 +1,18 @@
+current directory: /Users/danpost/danielposthumus.github.io/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+/opt/homebrew/opt/ruby@3.3/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/danpost/danielposthumus.github.io/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make -j13 DESTDIR\= sitearchdir\=./.gem.20260527-19034-ypihie sitelibdir\=./.gem.20260527-19034-ypihie clean
+
+current directory: /Users/danpost/danielposthumus.github.io/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make -j13 DESTDIR\= sitearchdir\=./.gem.20260527-19034-ypihie sitelibdir\=./.gem.20260527-19034-ypihie
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+
+current directory: /Users/danpost/danielposthumus.github.io/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make -j13 DESTDIR\= sitearchdir\=./.gem.20260527-19034-ypihie sitelibdir\=./.gem.20260527-19034-ypihie install
+/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20260527-19034-ypihie/racc
+
+current directory: /Users/danpost/danielposthumus.github.io/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20260527-19034-ypihie sitelibdir\=./.gem.20260527-19034-ypihie clean

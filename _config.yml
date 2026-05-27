@@ -85,11 +85,11 @@ author:
   avatar           : "profile.png"
   bio              : "Pre-Doctoral Fellow with Stanford Institute for Economic Policy Research (SIEPR)"
   location         :
-  cv               : "https://drive.google.com/file/d/1rNDbdbki0cW_wVZ3nc4b5J_w3y-X7vo6/view?usp=sharing"
+  cv               : "/files/cv-daniel-posthumus.pdf"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=TXrfcsMAAAAJ&hl=en&oi=ao"
-  email            : "danpost@stanford.edu"
+  email            : "danpost@bu.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :

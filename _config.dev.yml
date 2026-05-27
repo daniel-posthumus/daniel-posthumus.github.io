@@ -11,3 +11,8 @@ comments:
 
 sass:
   style: expanded
+
+# github-pages auto-enables jekyll-relative-links, which crashes on the
+# locally-resolved Jekyll version; not used by this site, so disable for dev
+relative_links:
+  enabled: false

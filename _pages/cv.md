@@ -10,7 +10,7 @@ author_profile: true
 ---
 
 **Phone:** (+1) 757-585-5124  
-**Email:** [danpost@stanford.edu](mailto:danpost@stanford.edu)
+**Email:** [danpost@bu.edu](mailto:danpost@bu.edu)
 
 ---
 
