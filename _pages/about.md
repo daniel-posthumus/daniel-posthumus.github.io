@@ -11,7 +11,6 @@ redirect_from:
 ---
 
 I am a Business Economics PhD student at Boston University's Questrom School of Business. My research interests lie in empirical industrial organization, particularly as applied to housing and energy markets. On a personal note, I love playing tennis, reading, history, and obsessing over politics.
-{: .home-intro}
 
 {% include base_path %}
 
@@ -22,13 +21,6 @@ I am a Business Economics PhD student at Boston University's Questrom School of 
   details.pub-abstract { margin-top: .35rem; }
   details.pub-abstract > summary { cursor: pointer; }
   .pub-abstract-body { margin-top: .35rem; }
-
-  /* Once the sidebar sits beside the content (>= $large, 925px), push the
-     intro down so its top lines up with the top of the profile photo —
-     i.e. past the name heading (2.95rem line + 1rem margin) above the photo. */
-  @media (min-width: 925px) {
-    .home-intro { margin-top: calc(2.95rem + 1rem + 5px); }
-  }
 </style>
 
 ## Research
