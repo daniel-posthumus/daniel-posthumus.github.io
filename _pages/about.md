@@ -10,7 +10,11 @@ redirect_from:
   - /research/
 ---
 
-I am a Business Economics PhD student at Boston University's Questrom School of Business. My research interests lie in empirical industrial organization, particularly as applied to housing and energy markets. On a personal note, I love playing tennis, reading, history, and obsessing over politics.
+I am a PhD student in Business Economics at Boston University's Questrom School of Business. Before BU, I was a predoctoral research fellow at the Stanford Institute for Economic Policy Research (SIEPR).
+
+My research applies empirical industrial organization methods to questions in urban and environmental economics. I am currently working on projects related to data center siting and fragmentation in local land-use regulation.
+
+Feel free to reach out to me at [danpost@bu.edu](mailto:danpost@bu.edu)!
 
 {% include base_path %}
 
